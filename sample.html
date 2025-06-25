@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sample Page</title>
+	<link rel="stylesheet" href="0-root.css">
+	<link rel="stylesheet" href="1-normalise.css">
+	<link rel="stylesheet" href="2-base.css">
+	<link rel="stylesheet" href="3-layout.css">
+	<link rel="stylesheet" href="4-function.css">
+	<link rel="stylesheet" href="5-theme.css">
+	<link rel="stylesheet" href="6-component.css">
+
+	<!-- Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<!-- HEADER SECTION -->
+	<header class="container text-center space-100-vertical">
+		<h1>CSS Framework Showcase</h1>
+		<p>A demonstration of the core components and fluid system of your CSS framework.</p>
+	</header>
+
+
+	<!-- CARD GRID SECTION -->
+	<section class="container space-100-bottom">
+		<h2 class="small-12 columns space-50-bottom">Responsive Card Grid</h2>
+		<div class="row">
+			<!-- Use spacing classes to create gutters -->
+			<div class="columns small-12 medium-6 large-4 space-min">
+				<div class="card-component">
+					<img src="https://placehold.co/600x400/0175FF/FFFFFF?text=Card+1" alt="Placeholder">
+					<div class="space-50">
+						<h5>Fluid & Responsive</h5>
+						<p>This card layout automatically adjusts based on the established breakpoints.</p>
+					</div>
+				</div>
+			</div>
+			<div class="columns small-12 medium-6 large-4 space-min">
+				<div class="card-component">
+					<img src="https://placehold.co/600x400/34495e/FFFFFF?text=Card+2" alt="Placeholder">
+					<div class="space-50">
+						<h5>System-Based</h5>
+						<p>All spacing and typography are derived from the core variables in `0-root.css`.</p>
+					</div>
+				</div>
+			</div>
+			<div class="columns small-12 medium-6 large-4 space-min">
+				<div class="card-component">
+					<img src="https://placehold.co/600x400/1abc9c/FFFFFF?text=Card+3" alt="Placeholder">
+					<div class="space-50">
+						<h5>Vanilla CSS</h5>
+						<p>Built with zero dependencies, ensuring maximum portability and ease of use.</p>
+					</div>
+				</div>
+			</div>
+			<div class="columns small-12 medium-6 large-4 space-min">
+				<div class="card-component">
+					<img src="https://placehold.co/600x400/9b59b6/FFFFFF?text=Card+4" alt="Placeholder">
+					<div class="space-50">
+						<h5>OOCSS Philosophy</h5>
+						<p>Utilizes descriptive class names for clear, object-oriented styling.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- TYPOGRAPHY & FORMS SECTION -->
+	<section class="container">
+		<div class="row">
+			<!-- Left Column: Typography -->
+			<div class="columns small-12 large-6">
+				<h2 class="space-25-bottom">Typography & Base Styles</h2>
+				<h1>Heading 1</h1>
+				<h2>Heading 2</h2>
+				<h3>Heading 3</h3>
+				<h4>Heading 4</h4>
+				<h5>Heading 5</h5>
+				<h6>Heading 6</h6>
+				<hr>
+				<p>This is a paragraph of text. It can contain <strong>bolded text (strong)</strong>, <em>italicized text (em)</em>, and links like this <a href="#">sample link</a>. You can also have abbreviations like <abbr title="HyperText Markup Language">HTML</abbr>. Sometimes you might want to include a snippet of `<code>inline code</code>` within a sentence.</p>
+				<blockquote>
+					<p>"This is a blockquote, used for long quotations. It should be visually distinct from other text."</p>
+					<cite>— Author Name</cite>
+				</blockquote>
+				<h6 class="space-25-vertical">Unordered List</h6>
+				<ul>
+					<li>List item one</li>
+					<li>List item two</li>
+					<li>
+						Nested list item
+						<ul>
+							<li>Sub-item A</li>
+							<li>Sub-item B</li>
+						</ul>
+					</li>
+					<li>List item four</li>
+				</ul>
+			</div>
+
+			<!-- Right Column: Form -->
+			<div class="columns small-12 large-6 space-100-left">
+				<h2 class="space-50-bottom">Form Elements</h2>
+				<form onsubmit="return false;" class="card-component space-25">
+					<div class="row">
+						<div class="columns small-12 medium-6">
+							<label for="textInput">Text Input</label>
+							<input type="text" id="textInput" placeholder="john.doe@example.com">
+						</div>
+						<div class="columns small-12 medium-6">
+							<label for="passwordInput">Password</label>
+							<input type="password" id="passwordInput" placeholder="Password">
+						</div>
+					</div>
+					<label for="selectList">Select Dropdown</label>
+					<select id="selectList">
+						<option value="1">Option 1</option>
+						<option value="2">Option 2</option>
+						<option value="3">Option 3</option>
+					</select>
+					<label for="textareaInput">Text Area</label>
+					<textarea id="textareaInput" placeholder="Your message here..."></textarea>
+					<fieldset>
+						<legend>Checkboxes</legend>
+						<label>
+							<input type="checkbox">
+							<span>Checkbox one</span>
+						</label>
+						<label>
+							<input type="checkbox">
+							<span>Checkbox two</span>
+						</label>
+					</fieldset>
+					<fieldset>
+						<legend>Radio</legend>
+						<label>
+							<input type="radio" name="radio_group">
+							<span>Radio one</span>
+						</label>
+						<label>
+							<input type="radio" name="radio_group">
+							<span>Radio two</span>
+						</label>
+					</fieldset>
+					<button type="submit" class="button-primary">Primary Button</button>
+					<button type="button" class="button-secondary">Secondary Button</button>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<div class="container">
+		
+
+
+	<!-- TABLE SECTION -->
+	<section class="container space-100-vertical">
+		<div class="row">
+			<div class="columns small-12">
+				<table>
+					<thead>
+						<tr>
+							<th>Header 1</th>
+							<th>Header 2</th>
+							<th>Header 3</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Data cell 1</td>
+							<td>Data cell 2</td>
+							<td>Data cell 3</td>
+						</tr>
+						<tr>
+							<td>Data cell A</td>
+							<td>Data cell B</td>
+							<td>Data cell C</td>
+						</tr>
+					</tbody>
+				</table>
+				<h5>Heading</h3>
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita quas laboriosam asperiores, error impedit, facilis, repellendus voluptas accusantium, qui laborum inventore! Doloribus repudiandae quisquam asperiores, ea corrupti eveniet voluptatem architecto.</p>
+				<hr>
+				<pre><code>
+/* This is a preformatted code block */
+html {
+	/* This makes 1rem = 10px, a classic and useful trick. */
+	font-size: 62.5%;
+}
+				</code></pre>
+			</div>
+		</div>
+	</section>
+
+	<footer class="container text-center space-100-bottom">
+		<small>This is Fineprint.</small>
+	</footer>
+</body>
+</html>
